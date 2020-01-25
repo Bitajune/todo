@@ -2,7 +2,7 @@
 
 #### Edit function coming soon so you may update your To-Do list as well as a toggle button to switch from "Not Done" to "Done".
 
-####[Check it out here](https://todo-bita.herokuapp.com/)
+[Check it out here](https://todo-bita.herokuapp.com/)
 
 ![](https://i.imgur.com/Jauk4SX.png)
 ![](https://i.imgur.com/dmJzbWN.png)
