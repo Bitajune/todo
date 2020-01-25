@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="div">
+      <br />
+      <h1><%= title %></h1>
+      <form method="POST" action="/">
+        <input type="text" name="list" />
+        <button type="submit">Add</button>
+      </form>
+      <% if (todos.length === 0) { %>
+      <h3>✿ Nothing To Do</h3>
+      <% } else {%> <% todos.forEach(t => { %>
+      <p class="toDo">
+        <u>✿ Things To Do:</u> <%= t.todo %> - <%= t.notDone ? "Not Done" :
+        "Done" %>
+      </p>
+      <% }) %><% } %>
+      <br />
+    </div>
+  </body>
+</html>
