@@ -12,4 +12,9 @@ router.post("/", (req, res) => {
   res.redirect("/");
 });
 
+router.delete("/:id", (req, res) => {
+  todos.pop(req.params.id);
+  res.redirect("/");
+});
+
 module.exports = router;

@@ -22,6 +22,11 @@
       <p class="toDo">
         <u>✿<%= t.todo %></u> - <%= t.notDone ? "Not Done" : "Done" %>
       </p>
+      <br />
+      <form class="delete" method="POST" action="/{{ id }}?_method=DELETE">
+        <button type="submit">Delete</button>
+      </form>
+
       <% }) %><% } %>
       <br />
     </div>
